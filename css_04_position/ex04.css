@@ -1,0 +1,47 @@
+@charset "UTF-8";
+/*
+position : html 요소의 위치를 설정
+
+속성
+
+absolute :
+static이 아닌 애를 기준으로 잡음
+
+fixed :
+
+*/
+
+body{
+    padding: 50px;
+    position: static;
+}
+.wrap{
+    margin: 0 auto;
+    width: 1000px;
+    border: 1px solid #000;
+    position: static;
+}
+.box-red{
+    width: 300px;
+    height: 100px;
+    background-color: red;
+    position: static;
+}
+.box-green{
+    width: 150px;
+    height: 400px;
+    background-color: green;
+    position: fixed;
+    top: 50px;
+    left: ;
+    /* left: calc((100% - 1000px) / 2 + 1000px); 띄어쓰기 잘 해야함 */
+}
+.box-pink{
+    width: 500px;
+    height: 100px;
+    background-color: pink;
+    position: static;
+}
+.box-scroll{
+    height: 5000px;
+}
