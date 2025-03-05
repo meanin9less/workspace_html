@@ -9,7 +9,7 @@ table, thead, tbody, tfoot, tr, th, td,
 header, footer, main, nav, section, article, aside{
     margin: 0;
     padding: 0;
-    font-family: "맑은 고딕";
+    font-family: "inherit";
     font-weight: inherit;
 }
 
@@ -53,8 +53,17 @@ a {
 
 <!-- 레이아웃부터 짜기 -->
 
+wrap 
+width 1000px ;
+font 맑은고딕 12px
 
-시맨틱 웹 : 검색에 잘 분류되게 정한 일정한 규칙, 
-아이디를 부여하기 보다 태그로 만들었음
-헤더 네비 푸터 등등 검색하면 나옴
+
+font, color
+
+logo 36px #79b30b
+footer asign a태그 #dddddd
+border  #c8c8c8
+
+
+
 */

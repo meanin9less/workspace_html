@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+/* ------------------------------------------------ 
+
+font 맑은고딕 12px
+
+wrap 
+width 1000px ;
+
+
+
+font, color, weight
+
+logo 36px #79b30b bold
+footer asign a태그 #dddddd
+border  #c8c8c8
+
+nav 24px bold
+
+*/
+
+body{
+    font-family: "궁서";
+}
+
+
+#wrap{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+header>#header-inner>h1{
+
+}
