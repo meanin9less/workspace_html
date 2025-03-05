@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>html5</title>
+</head>
+
+<body>
+    <h1>html공부하기</h1>
+    <h2>form요소-input(checkbox, radio)</h2>
+    
+    <hr>
+    <label for="chk-book1">독서</label>
+    <input id="chk-book1" type="checkbox" name="hobby" value="book">
+
+    <label for="chk-book2">음악</label>
+    <input id="chk-book2" type="checkbox" name="hobby" value="music">
+
+    <label for="chk-book3">여행</label>
+    <input id="chk-book3" type="checkbox" name="hobby" value="trip">
+
+    <!--체크박스 radio : 하나만 선택가능, checkbox : 복수선택 가능-->
+
+    <!------------------------------------------------------------->
+    <br><br><br>
+    
+    <form>
+        <label for="apple">사과</label>
+        <input id="apple" type="radio" name="fruit" value="apple" checked="checked">
+        <label for="grape">포도</label>
+        <input id="grape" type="radio" name="fruit" value="grape">
+        <label for="orange">오렌지</label>
+        <input id="orange" type="radio" name="fruit" value="orange">
+    </form>
+    
+    <br><br>
+
+    <form>
+        <label for="m1">1월</label>
+        <input id="m1" type="radio" name="month" value="m1">
+        <label for="m2">2월</label>
+        <input id="m2" type="radio" name="month" value="m2" checked="checked">
+        <label for="m3">3월</label>
+        <input id="m3" type="radio" name="month" value="m3">
+    </form>
+</body>
+
+</html>

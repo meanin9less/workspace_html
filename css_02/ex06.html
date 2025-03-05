@@ -1,0 +1,140 @@
+<!-- 
+css 수업을 위한 기본 문서
+인터넷개론 과제했던것을 한페이지로 표시
+-->
+
+<!DOCTYPE html>
+
+<html lang="ko"> <!-- 한국어문서만 검색할때, 음성으로 할때 한국어 음성지원 -->
+    <head>
+        <meta charset="UTF-8"> <!-- 브라우저가 문서를 해석할때 필요한 정보 -->
+        <title>스타일시트</title>
+        <!-- 스타일시트자리 -->
+        <!--<link rel="stylesheet" href="./main.css">-->
+        <style>
+            .div-size{
+                min-width: 1300px;
+            }
+            .round-each{
+                display: inline-block;
+                border: 1px solid #000;
+                width: 400px;
+                margin-bottom: 50px;
+                padding: 13px;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 20px;
+                border-bottom-left-radius: 30px;
+                border-bottom-right-radius: 40px;
+                text-decoration: underline;
+            }
+            .round{
+                display: inline-block;
+                border: 1px solid #000;
+                width: 400px;
+                margin-bottom: 50px;
+                padding: 13px;
+                border-radius: 10px 40px;
+                text-decoration: underline;
+            }
+            /*radius 왼쪽 위 부터 시계방향으로 먹음*/
+            .round-each2{
+                display: inline-block;
+                border: 1px solid #000;
+                width: 400px;
+                margin-bottom: 50px;
+                padding: 13px;
+                border-radius: 14px;
+                text-decoration: underline;
+            }
+
+            /* line-height : 줄간격으로 버튼 안에서 글자 위치 조정 가능*/
+            .btn-gray{
+                display: inline-block;
+                border: none;
+                border-radius: 10px;
+                width: 100px;
+                padding: 7px;
+                box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+                background-color: gray;
+                font-family: "맑은 고딕";
+                text-align: center;
+                text-decoration: none;
+                color: white;
+                cursor: pointer;
+            }
+            .btn-pink{
+                display: inline-block;
+                border: none;
+                border-radius: 10px;
+                cursor: pointer;
+                width: 100px;
+                padding: 7px;
+                box-shadow: 4px 4px 6px rgba(0.5, 0.5, 0, 0.5);
+                background-color: pink;
+                font-family: "맑은 고딕";
+                color: #000;
+                text-decoration: none;
+                text-align: center 0.5;
+            }
+            .btn-aqua{
+                display: inline-block;
+                border: none;
+                border-radius: 10px;
+                cursor: pointer;
+                width: 100px;
+                padding: 7px;
+                box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+                background-color: aqua;
+                font-family: "맑은 고딕";
+                color: #000;
+                text-decoration: none;
+                text-align: center;
+            }
+            .btn-hv:hover{
+                opacity: 0.8;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="div-size">
+        <div class="round-each">
+            라운드적용<br>
+            라운드적용<br>
+            라운드적용<br>
+            라운드적용<br>
+            라운드적용<br>
+            라운드적용<br>
+            라운드적용<br>
+            라운드적용<br>
+        </div>
+        <div class="round">
+            라운드적용<br>
+            라운드적용<br>
+            라운드적용<br>
+            라운드적용<br>
+            라운드적용<br>
+            라운드적용<br>
+            라운드적용<br>
+            라운드적용<br>
+        </div>
+        <div class="round-each2">
+            라운드적용<br>
+            라운드적용<br>
+            라운드적용<br>
+            라운드적용<br>
+            라운드적용<br>
+            라운드적용<br>
+            라운드적용<br>
+            라운드적용<br>
+        </div>
+        </div>
+        <button class="btn-gray btn-hv" type="submit">로그인</button>
+        <button class="btn-pink btn-hv" type="button">우편번호</button>
+        <button class="btn-aqua btn-hv" type="">수정버튼</button>
+        <br><br>
+        <a class="btn-aqua btn-hv" href="" target="_blank">로그인</a>
+        <br><br>
+        <a href="" target="_blank">회원가입폼으로이동</a>
+    </body>
+</html>

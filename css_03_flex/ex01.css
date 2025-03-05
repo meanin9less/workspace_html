@@ -1,0 +1,54 @@
+@charset "UTF-8";
+/*
+flex
+부모 컨테이너의 공간을 분배하여 자식요소를 유연하게 배치한다
+반응형 디자인 지원 : 화면크기에 따라 요소의 크기와 배치를 조정하여 반응형 웹디자인에 유용하다
+
+속성구분이 중요. 
+부모와 자식의 속성값을 명확히 구분
+
+flex의 기본 속성
+
+flex-direction 주축 설정
+row, column
+
+justify-content : 배치
+
+flex-start flex-end center 주축기준 시작 끝 중앙 이동
+space-between 시작 끝으로 배치 후 배치
+space-around 컨텐츠 마다 일정한 간격을 두고 배치
+space-evenly 모든 여백이 같게 배치
+
+align-items
+flex-wrap
+align-content
+
+*/
+.container{
+    width: 500px;
+    height: 200px;
+    border: 1px solid #000;
+    margin-bottom: 20px;
+}
+
+.container.row{
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-evenly;
+}
+
+.container.column{
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-evenly;
+}
+
+.item1{
+    border: 3px solid #f00;
+}
+.item2{
+    border: 3px solid #00f;
+}
+.item3{
+    border: 3px solid #0F0;
+}

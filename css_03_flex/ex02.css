@@ -1,0 +1,54 @@
+@charset "UTF-8";
+/*
+flex
+부모 컨테이너의 공간을 분배하여 자식요소를 유연하게 배치한다
+반응형 디자인 지원 : 화면크기에 따라 요소의 크기와 배치를 조정하여 반응형 웹디자인에 유용하다
+
+속성구분이 중요. 
+부모와 자식의 속성값을 명확히 구분
+
+
+align-items 교차축 정렬 float 한것처럼 자식들이 컨텐츠크기만큼만 차지하게됨
+flex-start; flex-end 
+center / base-line 구분
+center 컨텐츠의 중앙 정렬
+baseline 컨텐츠의 아랫줄을 맞춤 -> 나열하기 좋음
+stretch 높이를 강제로 늘림 교차축으로
+
+
+
+flex-wrap
+align-content
+
+*/
+.container{
+    width: 500px;
+    height: 200px;
+    border: 1px solid #000;
+    margin-bottom: 20px;
+}
+.container.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+.container.column{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+/*세로일때 baseline은 별로 의미가 없음*/
+.item1{
+    border: 3px solid #f00;
+    font-size: 15px;
+}
+.item2{
+    border: 3px solid #00f;
+    font-size: 20px;
+}
+.item3{
+    border: 3px solid #0F0;
+    font-size: 25px;
+}

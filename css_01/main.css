@@ -1,0 +1,107 @@
+@charset "UTF-8";
+/*
+선택자 >> 전략 세우기가 중요
+
+선택자 selector 문법 구조
+
+                            선택자 + 속성 + 속성값
+    1.태그선택자
+    h2(선택자) color(속성) #ff00ff(속성값)
+
+    2.클래스 선택자 (클래스 설정법 html 태그에 class="???")
+    .classname 속성 속성값
+
+    3.아이디 선택자 (클래스는 동시에 바꿔야 할 때 후에 혹은 그럴 가능성이 있을때, 
+                    자바스크립트에 결합될때 id는 하나만 해줌)
+    #id(선택자) 속성 속성값
+
+    4.종속 선택자(세가지 종합)
+     ex) h1#head {}= h1이면서 head라는 아이디를 가진 태그
+     ex) input.selected {} = input 태그안에 selected라는 클래스를 가진 태그
+     너무 복잡한 조합은 피하는 것이 좋다
+
+    5.하위 선택자[선택자 내부의 자손(자신제외)에게 속성 지정]
+    띄어쓰기하면 됨
+    ex) p .txt1 p에 작동하는 것이 아닌 .txt1에 작동, p태그 내의 모든 .txt1클래스에 작동
+    
+    6. 자식 선택자
+    ex) body>ul
+    바로 밑 1대손까지(body 하위의 ul)만 모두 작동 (하위 선택자는 자식의 자식의 자식까지 해당하면 모두 작동)
+
+    7. 그룹선택자
+    항상 세트지어 있을것 같은 여러계층경로가 섞인 선택자
+    ex)
+    ul>li{color: #ff0000;}
+    thead>tr>th{color: #ff0000;}
+    h3.red{color: #ff0000;}
+    p.red{color: #ff0000;}
+                                이걸
+
+    ul>li, thead>tr>th, h3.red, p.red{color: #ff0000;} 이렇게 써도됨
+    
+    여러 경로에{color: #ff0000;} 이 속성이 공통이면
+    
+    여러 경로를 콤마로 이어서 묶어 쓸 수 있음
+
+    8. 속성 선택자
+    속성도 공통으로 뽑아낼 수 있다.
+    a[target]만 쓰거나 a[target="???"]도 가능 [target="??"] 속성만 써도 가능
+
+    @class, id는 문법을 따로 줄 정도이니 웬만하면 #, . 으로 그냥 쓰자
+
+    9. 가상 클래스(Pseudo) 지금까진 페이지가 열리면 작동, 
+        이건 사용자가 행동하냐 마냐에 따라 작동
+        ex)h1:hover{color: #ff0000;} = h1에 마우스 올리면 빨간색
+    a:link -> 링크를 클릭하지 않은 그냥 링크만 되어 있는 상태
+    a:visited -> 링크를 눌러서 방문한 후 상태
+    a:hover -> 마우스의 커서가 올라가 있는 상태
+    a:active -> 마우스 커서를 클릭한 순간부터 놓기 직전까지 상태
+    호버랑 엑티브는 링크 이외에도 다른곳에도 적용 가능
+
+    10. 가상요소 (Pseudo)         요소 = <태그>컨텐츠</태그>
+    h2::before{content: "#";}
+    h2::after{content: ".";}
+    눈에 보이지만 html상 존재하지 않는 #과 .이 앞뒤로 붙음 그저 꾸미기용
+
+    11. 형제 선택자
+    h1~p{} 뒤에오는 p
+    h1+p{} 뒤에오는 첫번째p
+
+    12. 전체선택자
+    *{ margin:0; padding:0;}
+    잘안씀 전부 안먹는 경우가 있음
+    
+    body, div, ul, li, dl, dt, ol, h1, h2, h3, h4, h5, h6, input, fieldset, legend, p, select, table, th, td, tr,
+    textarea, button, form {
+    margin: 0; padding: 0;
+    }
+    이걸 더 씀, 자간
+
+    div, span
+    영역구분
+
+    font-size: 10px;
+    font-weight: bold; 
+    
+    선택자{border-radius: ;} > 라운드처리
+    
+    블록요소 : 옆에 올 수 없음 1줄 다 차지
+    가로 세로 크기 조정 가능
+
+    인라인블록 요소 : 가로, 세로 조정 가능 
+    옆에 올 수 있음 
+    ex) form 관련 태그, img
+
+    인라인 요소 : 옆에 올 수 있음, 가로 세로 조정 불가능    
+
+*/
+
+
+
+p.red{
+    color: #ff0000;
+    font-size: 25px;
+}
+body ul{color: #ff0000;}
+body>ul {}
+*{margin: 0; padding: 0;}

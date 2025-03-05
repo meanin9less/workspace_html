@@ -1,0 +1,100 @@
+<!-- 
+css 수업을 위한 기본 문서
+인터넷개론 과제했던것을 한페이지로 표시
+-->
+
+<!DOCTYPE html>
+
+<html lang="ko"> <!-- 한국어문서만 검색할때, 음성으로 할때 한국어 음성지원 -->
+    <head>
+        <meta charset="UTF-8"> <!-- 브라우저가 문서를 해석할때 필요한 정보 -->
+        <title>스타일시트</title>
+        <!-- 스타일시트자리 -->
+        <!--<link rel="stylesheet" href="./main.css">-->
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+                
+
+            
+            
+            .box-red{
+                background-color: #f00;
+                width: 300px;
+                border: 1px solid #000;
+                margin: 0px auto;
+                padding: 10px 20px 30px 40px;
+            }
+            /*
+                margin-top: 10px;
+                margin-right: 20px;
+                margin-bottom: 30px;
+                margin-left: 40px;
+                
+                margin: 10px 20px 30px 40px;
+
+                margin: 10px 20px : 상하 10px 좌우 20px
+
+                상하 마진 : 겹침 / 좌우는 안겹침
+                위에껄 아래로 30 주고 아래껄 20줘도 그대로 30으로 됨 큰게 먹음
+
+                음수도 가능 
+
+                보더 패딩의 합이 총 길이임
+                세로사이즈는 잘 안정하고 가로는 정함
+                padding-top: 10px;
+                padding-right: 20px;
+                padding-bottom: 30px;
+                padding-left: 40px;
+                
+                항상 가운데 auto (좌우 부분에 auto니까 좌우의 가운데)
+             */
+
+            .box-green{
+                background-color: #0f0;
+                width: 300px;
+                border: 1px solid #000;
+                margin: 20px 0px 0px 0px;
+            }
+            /* 초록박스는 가로길이가 300px + 선 2px = 302px */
+            .box-gray{
+                background-color: gray;
+                box-sizing: border-box;
+                width: 300px;
+                border: 1px solid #000;
+                margin: 20px 0px 0px 0px;
+                padding: 0px 80px 0px 0px;
+            }
+            /* box-sizing 정한 크기로 크기유지*/
+
+            .in-line{
+                background-color: #f00;
+                box-sizing: border-box;
+                margin: 20px 40px;
+                padding: 20px 20px;
+            }
+            /* 
+            인라인 요소 마진 : 좌우만 먹음
+                    패딩 : 상하좌우 다먹음
+            */
+        </style>
+    </head>
+
+    <body>
+        <div class="box-red">
+            css에서 가장 보편적이고 많이 사용되는 마진과 코드 패딩에 대한 값이 어떻게 적용되는지 알아봅시다.
+        </div>
+        <div class="box-green">
+            css에서 가장 보편적이고 많이 사용되는 마진과 코드 패딩에 대한 값이 어떻게 적용되는지 알아봅시다.
+        </div>
+        <div class="box-gray">
+            css에서 가장 보편적이고 많이 사용되는 마진과 코드 패딩에 대한 값이 어떻게 적용되는지 알아봅시다.
+        </div>
+        <br>
+        <span class="in-line">dasdsafasd</span>
+        <span class="in-line">dasdsafasd</span>
+    </body>
+
+</html>

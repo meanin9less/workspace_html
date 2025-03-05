@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+
+
+body, div, ol, ul, li, dl, dt, 
+h1, h2, h3, h4, h5, h6, 
+form, fieldset, legend, input, select, textarea, button, 
+table, th, td, tr, a, p{
+    margin: 0;
+    padding: 0;
+    font-family: "맑은 고딕";
+    font-size: 12px;
+    text-decoration: none;
+}
+
+input, textarea, select{
+    font-family: "inherit";
+    font-size: "inherit";
+}
+
+ul>li, ol>li{
+    list-style-type: none;
+}
+.clearfix:before, .clearfix:after {display: block; content: ""; line-height: 0;}
+.clearfix:after {clear: both;}
+/* ------------------------------------------------ */
+body{
+    background-color: gray;
+}
+.wrap{
+    padding-bottom: 10px;
+    width: 600px;
+    box-sizing: border-box;
+    background-color: white;
+}
+h3{
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.path>li{
+    float: left;
+}
+.path>li:not(:last-child)::after{
+    content: ">";
+}
+
+
+.form-group:not(:last-child) {
+    padding: 10px 0px;
+    border-bottom: 1px solid gray;
+}
+.form-group:last-child {
+    padding: 10px 0px;
+    height: 50px;
+    border-bottom: 3px solid gray;
+    
+}
+.form-group div.form-untitle{
+    padding: 10px 0px 0px 0px;
+    margin-left: 124px
+}
+.form-title{
+    display: inline-block;
+    width: 120px;
+    text-align: center;
+}
+.btn-group{
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+}
+.btn-group button{
+    width: 120px;
+    padding: 10px;
+}
+.address{
+    width: 400px;
+}
+.radio, .checkbox{
+    margin-right: 7px;
+}
+.form-group2-h{
+    display: inline-block;
+    float: left;
+}
+#introduce{
+    display: inline;
+    overflow: auto;
+    width: 400px;
+    height: 50px;
+}

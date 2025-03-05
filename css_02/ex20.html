@@ -1,0 +1,79 @@
+<!-- 
+css 수업을 위한 기본 문서
+인터넷개론 과제했던것을 한페이지로 표시
+-->
+
+<!DOCTYPE html>
+
+<html lang="ko"> <!-- 한국어문서만 검색할때, 음성으로 할때 한국어 음성지원 -->
+<head>
+    <meta charset="UTF-8"> <!-- 브라우저가 문서를 해석할때 필요한 정보 -->
+    <title>스타일시트</title>
+    <!-- 스타일시트자리 -->
+    <!--<link rel="stylesheet" href="./main.css">-->
+    <style>
+        /* 플롯 회색공간
+        데이터 양이 변할때마다 가변하는 공간을 만드는 방법
+
+        •감싸는(높이가 없어진) 박스(회색)를 float 해준다.
+        -똑같이 float을 쓰면 해결되나 계속적으로 float을 써야한다.
+
+        •float 된 박스 다음에 오는 박스(빨강)에 clear: both; 해준다.
+        -전체의 흐름이 깨진다. 권장하지 않음
+
+        •감싸는(높이가 없어진) 박스(회색)에 높이값을 준다.
+        -안쪽의 내용이 많아지는 경우 부모를 넘어서 표현된다.
+
+        •감싸는(높이가 없어진) 박스(회색)에 overflow: hidden 해준다.
+        -height 값을 인식한다. 그러나 overflow의 정상기능이 아니다.(css만 볼 때 오해하기 쉬움)
+
+        •clearfix를 만들어 감싸는(높이가 없어진) 박스에 사용한다.
+        -가상으로 영역을 만들어 height 값을 인식하도록 만드는 방법(추천)
+        
+        .clearfix:before, .clearfix:after {
+            display: block; content: ""; line-height: 0;
+            }
+        
+        .clearfix:after {clear: both;}
+        */
+
+
+        .clearfix:before, .clearfix:after {display: block; content: ""; line-height: 0;}
+        .clearfix:after {clear: both;}
+
+        .gray1{
+            background-color: gray;
+            padding: 5px;
+        }
+        .blue1{
+            background-color: blue;
+            float: left;
+        }
+        .green1{
+            background-color: green;
+            float: left;
+        }
+        .red1{
+            background-color: red;
+            width: 800px;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="gray1 clearfix">
+        <div class="blue1">
+            파란박스
+        </div>
+        <div class="green1">
+            초록박스
+        </div>
+    </div>
+
+    <div class="red1">
+        빨간박스
+    </div>
+</body>
+
+</html>

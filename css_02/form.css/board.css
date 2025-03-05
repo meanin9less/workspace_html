@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+body, div, ol, ul, li, dl, dt, 
+h1, h2, h3, h4, h5, h6, 
+form, fieldset, legend, input, select, textarea, button, 
+table, th, td, tr, p{
+    margin: 0;
+    padding: 0;
+}
+
+input, textarea, select{
+    font-family: "inherit";
+    font-size: "inherit";
+}
+ /* 
+inherit 상속받다
+form관련 태그는 상속이 자동으로 안되는 경우가 많음, 강제로 상속
+*/
+ul>li, ol>li{
+    list-style-type: none;
+}
+.clearfix:before, .clearfix:after {display: block; content: ""; line-height: 0;}
+.clearfix:after {clear: both;}
+
+/* ------------------------------------------------ */
+body{
+    background-color: gray;
+    font-family: "맑은 고딕";
+    font-size: 12px;
+}
+.wrap{
+    padding: 10px;
+    width: 700px;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+/**/
+ol.path li{
+    float: left;
+    margin: 0px 0px 10px 0px;
+}
+ol.path li:not(:last-child):after{
+    content: ">";
+}
+/**/
+
+h3{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0px 0px 10px 0px;
+
+}
+.form-group{
+    margin: 0px 0px 10px 0px;
+}
+.form-group .form-txt{
+    display: inline-block;
+    width: 80px;
+} 
+
+.form-group #sel-board{
+    width: 200px;
+}
+.form-group #txt-title{
+    width: 590px;
+}
+.form-group #txt-password{
+    width: 200px;
+}
+
+.form-group input[type="radio"], 
+.form-group input[type="checkbox"]{
+    margin: 0px 10px 0px 0px;
+}
+textarea{
+    width: 676px;
+    height: 80px;
+}
+.btn-group{
+    padding: 10px 0px 0px 0px;
+    border-top: 2px solid gray;
+    text-align: center;
+}
+.btn-group button{
+    width: 70px;
+    height: 25px;
+    
+}
+
+/* 
+label 태그에 바로 넓이를 넣으면 
+radio의 label을 달 때 어려움
+label의 클릭 기능과 공간을 차지하는 기능을 분리해야함 아니면 
+label 자체적 기능 + form-txt 라는 class를 부여해서 공간의 기능을 분리
+*/

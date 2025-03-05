@@ -1,0 +1,57 @@
+@charset "UTF-8";
+/*
+flex
+부모 컨테이너의 공간을 분배하여 자식요소를 유연하게 배치한다
+반응형 디자인 지원 : 화면크기에 따라 요소의 크기와 배치를 조정하여 반응형 웹디자인에 유용하다
+
+속성구분이 중요. 
+부모와 자식의 속성값을 명확히 구분
+
+자식속성
+<여백을 정리하는 속성>
+flex-grow
+flex-shrink
+flex-basis
+
+flex-basis
+화면비가 넓어지거나 좁아질때를 대비해서 규칙 설정
+아이템의 주축의 폭 사이즈를 결정한다.
+auto : 컨텐츠의 가로값을 폭으로 갖는다
+0 : 가로폭을 0으로 계산 , 화면에는 컨텐츠크기만큼 출력되지만 계산상 0으로 인식
+px, %로 부여하면 부여된 대로 앎
+flex에서 가로값을 줄 때는 위 세개의 속성을 사용해야 한다.
+width 같은것도 먹히긴 하는데 복잡해지면 힘들어짐
+*/
+
+.container{
+    width: 500px;
+    height: 200px;
+    border: 1px solid #000;
+    margin-bottom: 20px;
+}
+.container.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.container.column{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.item1{
+    border: 3px solid #f00;
+    flex-basis: 70px;
+}
+.item2{
+    border: 3px solid #00f;
+    flex-basis: 170px;
+}
+.item3{
+    border: 3px solid #0F0;
+    flex-basis: 270px;
+}

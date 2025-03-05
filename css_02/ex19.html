@@ -1,0 +1,47 @@
+<!-- 
+css 수업을 위한 기본 문서
+인터넷개론 과제했던것을 한페이지로 표시
+-->
+
+<!DOCTYPE html>
+
+<html lang="ko"> <!-- 한국어문서만 검색할때, 음성으로 할때 한국어 음성지원 -->
+    <head>
+        <meta charset="UTF-8"> <!-- 브라우저가 문서를 해석할때 필요한 정보 -->
+        <title>스타일시트</title>
+        <!-- 스타일시트자리 -->
+        <!--<link rel="stylesheet" href="./main.css">-->
+        <style>
+            .box{
+                width: 300px;
+                height: 50px;
+            }
+            .red{
+                background-color: #f00;
+            }
+            .green{
+                background-color: #0f0;
+                /*visibility: visible; 
+                자바스크립트로 사용자가 액션할때 visible <-> hidden 하도록 설정 가능*/
+                display: none;
+                /* visibility : 공간은 차지, display : none 차지하는 공간 자체가 사라짐*/
+            }
+            .blue{
+                background-color: #00f;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="box red">
+            빨간박스
+        </div>
+        <div class="box green">
+            초록박스
+        </div>
+        <div class="box blue">
+            파랑박스
+        </div>
+    </body>
+
+</html>

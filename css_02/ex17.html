@@ -1,0 +1,40 @@
+<!-- 
+css 수업을 위한 기본 문서
+인터넷개론 과제했던것을 한페이지로 표시
+-->
+
+<!DOCTYPE html>
+
+<html lang="ko"> <!-- 한국어문서만 검색할때, 음성으로 할때 한국어 음성지원 -->
+<head>
+    <meta charset="UTF-8"> <!-- 브라우저가 문서를 해석할때 필요한 정보 -->
+    <title>스타일시트</title>
+    <!-- 스타일시트자리 -->
+    <!--<link rel="stylesheet" href="./main.css">-->
+    <style>
+        /*강사님코드*/
+        ol>li{
+            list-style-type: none;
+            float: left;
+        }
+        ol>li::after{
+            content: ">";
+            padding: 0px 10px;
+        }
+        ol>li:last-child::after{
+            content: none;
+        }
+    </style>
+</head>
+
+<body>
+    <ol class="b-crumb">
+        <li><span>홈</span></li>
+        <li><span>게시판</span></li>
+        <li><span>일반게시판</span></li>
+        <li><span>게시글</span></li>
+    </ol>
+    
+</body>
+
+</html>

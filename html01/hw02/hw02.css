@@ -1,0 +1,81 @@
+/* 태그 */
+
+body{
+    font-family: "맑은 고딕";
+    font-size: 17px;
+}
+h1{
+    font-family: 궁서체;
+    font-size: 30px;
+    letter-spacing: 15px;
+}
+h2{font-size: 25px;}
+h3{font-size: 20px;}
+
+div{
+    background-color: #d9d9d9;
+}
+
+div>p{
+    text-indent: 30px;
+}
+
+ul>li{
+    list-style-type: square;
+}
+ol>li{
+    list-style-type: none;
+}
+table>thead>tr{
+    background-color: #C8EBFA;
+}
+table>tbody>tr:hover{
+    background-color: #EDD3ED;
+}
+table>tbody>tr>td+td{
+    text-align: right;
+}
+table>tbody>tr>td+td::before{
+    content: "약 ";
+}
+table>tbody>tr>td+td::after{
+    content: " (MB/초)";
+}
+
+
+td a:link{
+    text-decoration: none;
+    color: #000;
+}
+td a:visited{
+    color: #000;
+}
+td a:hover{
+    text-decoration: underline;
+    color: #00f;
+}
+td a:active{
+    text-decoration: underline;
+    color: #00f;    
+}
+
+/* class */
+
+.f-red{
+    color: red;
+}
+.f-green{
+    color: green;
+}
+.f-blue{
+    color: blue;
+}
+.f-bold{
+    font-weight: bold;
+}
+.f-italic{
+    font-style: italic;
+}
+.t-line{
+    text-decoration: underline;
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>html5</title>
+</head>
+
+<body>
+<!--
+목차<br>
+<ol>
+    <li>
+        <a href="C:\javaStudy\workspace_html\html01\ex01.html" target="_self">
+            chapter01. h1~h6요소
+        </a>
+    </li>
+    <li>
+        <a href="C:\javaStudy\workspace_html\html01\ex02.html" target="_self">
+            chapter02. p, br, blockquote, q, strong, em 요소
+        </a>
+    </li>
+    <li>
+        <a href="C:\javaStudy\workspace_html\html01\ex03.html" target="_self">
+            chapter03. ol, ul 요소                   
+        </a>
+    </li>
+    <li>
+        <a href="C:\javaStudy\workspace_html\html01\ex04.html" target="_self">
+            chapter04. a요소                    
+        </a>
+    </li>
+</ol>
+-->
+
+<!--li는 붙여놓는게 좋다. 아래가 좋은 코드-->
+    목차<br>
+    <ol>
+        <a href="./ex01.html" target="_self">
+            <li>chapter01. h1~h6요소</li>
+        </a>
+
+        <a href="./ex02.html" target="_self">
+            <li>chapter02. p, br, blockquote, q, strong, em 요소</li>
+        </a>
+
+        <a href="./ex03.html" target="_self">
+            <li>chapter03. ol, ul 요소</li>
+        </a>
+
+        <a href="./ex04.html" target="_self">
+            <li>chapter04. a요소</li>
+        </a>
+        <a href="./ex05.html" target="_self">
+            <li>chapter05. table요소</li>
+        </a>
+        <a href="./ex06.html" target="_self">
+            <li>chapter06. table 모든 요소 적용</li>
+        </a>
+        <a href="./ex07.html" target="_self">
+            <li>chapter06. form요소-input(text, password)</li>
+        </a>
+    </ol>
+
+    <hr>
+
+    <h1>html5공부하기</h1>
+    <h2>chapter04. a요소</h2> <!--인라인-->
+
+    <!--a태그는 속성이 필요 하늘색글씨-->
+    <!--href : 하이퍼링크--><!--target : 안쓰면 자동으로 self, self인걸 강조하고 싶으면 씀-->
+    <ul>
+        <a href="https://www.naver.com/" target="_blank">
+            <li>네이버</li>
+        </a>
+        <a href="https://www.google.com/" target="_blank">
+            <li>구글</li>
+        </a>
+    </ul>
+
+    <!--경로에서 "./" : 같은 공간 안의 파일-->
+    <ol>
+        <a href="./ex01.html" target="_self">
+            <li>1페이지 바로가기</li>
+        </a>
+        <a href="./ex02.html" target="_self">
+            <li>2페이지 바로가기</li>
+        </a>
+        <a href="./ex03.html" target="_self">
+            <li>3페이지 바로가기</li>
+        </a>
+        <a href="./ex04.html" target="_self">
+            <li>4페이지 바로가기</li>
+        </a>
+    </ol>
+
+    <ul>
+        <a href="https://www.naver.com/" target="portal">
+            <li>네이버</li>
+        </a>
+        <a href="https://www.google.com/" target="portal">
+            <li>구글</li>
+        </a>
+        <a href="https://www.coupang.com/" target="shop">
+            <li>쿠팡</li>
+        </a>
+        <a href="https://ko.aliexpress.com/" target="shop">
+            <li>알리</li>
+        </a>
+    </ul>
+
+    <br><br><br>
+
+    <img src="C:\javaStudy\workspace_html\html01\img\jung.jpg" width="258" height="400" alt="정우성">
+    <img src="C:\javaStudy\workspace_html\html01\img\yoo.jpg" width="258" height="400" alt="유재석">
+    <img src="https://helpx.adobe.com/content/dam/help/en/photoshop/using/quick-actions/remove-background-before-qa1.png" width="258" height="400" alt="강아지">
+
+    <img src="./img/jung.jpg" width="258" height="400" alt="정우성">
+    <img src="./img/yoo.jpg" width="258" height="400" alt="유재석">    
+    <a href="das" target="">
+        <img src="./img/yoo.jpg" width="50" height="60" alt="유재석">
+    </a>
+</body>
+</html>

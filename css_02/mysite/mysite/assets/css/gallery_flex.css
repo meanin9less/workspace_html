@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+/* gallery */
+div#upload-img{
+    margin: 10px 0;
+}
+
+div label{
+    float: right;
+    background-color: #dddddd;
+    border: 1px solid #000;
+    border-radius: 4px;
+    padding: 7px;
+}
+
+div#gallery{
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+#gallery ul{
+    border: 1px solid #c0c0c0;
+    margin-bottom: 5px;
+}
+#gallery ul>li{
+    box-sizing: border-box;
+    width: 197.5px;
+    padding: 0 5px;   
+}
+#gallery ul>li>img{
+    width: 100%;
+}
+
+/* /gallery */

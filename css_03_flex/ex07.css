@@ -1,0 +1,50 @@
+@charset "UTF-8";
+/*
+flex
+부모 컨테이너의 공간을 분배하여 자식요소를 유연하게 배치한다
+반응형 디자인 지원 : 화면크기에 따라 요소의 크기와 배치를 조정하여 반응형 웹디자인에 유용하다
+
+속성구분이 중요. 
+부모와 자식의 속성값을 명확히 구분
+
+자식속성
+<여백을 정리하는 속성>
+flex-grow
+flex-shrink
+flex-basis
+
+flex-grow
+늘어난 여백을 n/n만큼 분배
+flex-shrink
+줄어들 여백의 비율 
+
+*/
+
+.container{
+    
+    height: 200px;
+    border: 1px solid #000;
+    margin-bottom: 20px;
+}
+.container.row{
+    display: flex;
+    flex-direction: row;
+    justify-items: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.item1{
+    border: 3px solid #f00;
+    flex-grow: 1;
+    flex-basis: auto;
+}
+.item2{
+    border: 3px solid #00f;
+    flex-grow: 1;
+    flex-basis: auto;
+}
+.item3{
+    border: 3px solid #0F0;
+    flex-grow: 0;
+    flex-basis: auto;
+}

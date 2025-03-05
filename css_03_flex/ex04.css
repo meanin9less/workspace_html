@@ -1,0 +1,56 @@
+@charset "UTF-8";
+/*
+flex
+부모 컨테이너의 공간을 분배하여 자식요소를 유연하게 배치한다
+반응형 디자인 지원 : 화면크기에 따라 요소의 크기와 배치를 조정하여 반응형 웹디자인에 유용하다
+
+속성구분이 중요. 
+부모와 자식의 속성값을 명확히 구분
+<자식속성 item>
+order 자식들의 배치 순서
+기본값은 0 
+부여한 숫자가 클 수록 뒤에 배치
+인위적인 순서이기 때문에 비추천
+
+
+align-self
+flex-grow
+flex-shrink
+flex-basis
+
+
+*/
+
+.container{
+    width: 500px;
+    height: 200px;
+    border: 1px solid #000;
+    margin-bottom: 20px;
+}
+.container.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.container.column{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.item1{
+    border: 3px solid #f00;
+    order: 2;
+}
+.item2{
+    border: 3px solid #00f;
+    order: 3;
+}
+.item3{
+    border: 3px solid #0F0;
+    order: 1;
+}

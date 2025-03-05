@@ -1,0 +1,50 @@
+<!-- 
+css 수업을 위한 기본 문서
+인터넷개론 과제했던것을 한페이지로 표시
+-->
+
+<!DOCTYPE html>
+
+<html lang="ko"> <!-- 한국어문서만 검색할때, 음성으로 할때 한국어 음성지원 -->
+    <head>
+        <meta charset="UTF-8"> <!-- 브라우저가 문서를 해석할때 필요한 정보 -->
+        <title>스타일시트</title>
+        <!-- 스타일시트자리 -->
+        <!--<link rel="stylesheet" href="./main.css">-->
+        <style>
+            /* 틀의 크기 width, height 
+                사진 크기 background-size */
+            .bg-img{
+                width: 100%;
+                aspect-ratio: 16/9;
+                background-size: 500px;
+
+                background-color: red;
+                background-image: url(./img/back_img01.jpg);
+                background-repeat: no-repeat;
+                background-position: left center; /* 좌우 : 값 상하 : 값 / px넣어도 됨*/
+                background-attachment: fixed; /* 배경화면 스크롤 고정, 스크롤 따라오기 */
+            }
+
+            .bg-img2{
+                width: 100%;
+                aspect-ratio: 16/9;
+                background: #f00 url(./img/back_img01.jpg) no-repeat fixed center center;
+                /*
+                컬러 경로 반복 위치 고정
+                5개 축약 가능*/
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="bg-img2">
+            안녕하세요.
+        </div>
+        <br><br><br><br><br>
+        <div>
+            <img src="./img/back_img01.jpg" alt="">
+        </div>
+    </body>
+
+</html>
